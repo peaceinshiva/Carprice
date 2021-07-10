@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<title>Price Prediction</title>
+
+<style>
+   h2 {text-align: center;}
+</style>
+<img src="index.png" alt="4achievers" width='404' height="102"> 
+
+<h2>Price Page</h2>
+<body>
+<h4>Details</h4>
+<form action='http://localhost:5000/predict' method='post'> 
+
+
+<p><b>Vehicle Selection</b></p>
+<label for="name">Vehicles :</label>
+<select name="name" id="name"> 
+  <option></option>
+  <option value='7'>Lux </option> 
+  <option value="2">Shared</option>
+  <option value='5'>Lyft</option>
+  <option value="4">Lux Black XL</option>   
+  <option value="6">Lyft XL</option>
+  <option value="3">Lux Black</option> 
+  <option value="11">UberXL</option>
+  <option value="0">Black</option>  
+  <option value="10">UberX</option>
+  <option value="12">WAV</option>   
+  <option value="1">Black SUV</option> 
+  <option value="9">UberPool</option>  
+  <option value="8">Taxi</option></select>
+  
+
+
+<p>
+<label>distance </label>
+<input type ='number' placeholder='distance' name='distance'></p>{{msg}}
+
+<p><label>surge_multiplier  </label>
+<input type ="number" placeholder='surge_multiplier' name='multiplier'></p><br>
+
+<p>
+<label>cab_type </label>
+<select name="cab_type" id="cab_type">
+ <option> </option> 
+  <option value='0',> Lyft </option> 
+  <option value="1">Uber</option></select></p>
+
+
+<p>
+<label>product_id</label>
+<input type ="number" placeholder='product_id' name='product_id'></p><br>
+
+
+<h>
+<button type="submit" value="submit">Submit</button>
+<input type="reset" value='Reset'>
+{{msg}}
+</h></div>
+
+
+</form>
+</body>
+</html>
